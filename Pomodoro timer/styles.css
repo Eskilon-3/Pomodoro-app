@@ -1,0 +1,83 @@
+html{
+    box-sizing: border-box;
+    font-size: 10px;
+    background: blueviolet;
+}
+
+body{
+    margin: 0px;
+    text-align: center;
+    font-family: monospace;
+}
+
+.timer{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.timer-controls{
+    display: flex;
+}
+
+.timer-controls > *{
+    flex: 1;
+}
+
+.timer-button {
+    background: none;
+    border: 0;
+    cursor: pointer;
+    color: white;
+    font-size: 2rem;
+    text-transform: uppercase;
+    border-bottom: 3px solid rgba(0,0,0,0.2);
+    border-right: 1px solid rgba(0,0,0,0.2);
+    padding: 1rem;
+    font-family: monospace;
+  }
+
+  .timer-button:hover,
+.timer-button:focus {
+  background: rgba(0,0,0,0.2);
+  outline: 0;
+}
+
+.display {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .display-time-left {
+    font-weight: 100;
+    font-size: 20rem;
+    margin: 0;
+    color: white;
+    
+  }
+
+  .start-btn{
+      color: white;
+      height: 40px;
+      background-color: green;
+      width: 70px;
+      border-radius: 10px;
+  }
+
+  .stop-btn{
+    color: white;
+    height: 40px;
+    background-color: red;
+    width: 70px;
+    border-radius: 10px;
+}
+
+.reset-btn{
+    background-color: white;
+    height: 40px;
+    width: 70px;
+    border-radius: 10px;
+}
